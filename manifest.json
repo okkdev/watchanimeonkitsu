@@ -1,23 +1,24 @@
 {
   "name": "watch anime on kitsu",
-  "version": "0.0.1",
+  "version": "0.1",
   "manifest_version": 2,
   "description": "how do watch the videos",
-  "homepage_url": "",
+  "homepage_url": "https://github.com/ok2094/watchanimeonkitsu",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "default_locale": "en",
   "background": {
     "scripts": [
+      "js/jquery/jquery.min.js",
       "background.js"
-    ],
-    "persistent": true
+    ]
   },
   "permissions": [
-    "https://kitsu.io/anime/*"
+    "tabs",
+    "https://kitsu.io/anime/*",
+    "https://www.masterani.me/*"
   ],
   "content_scripts": [
     {
@@ -25,7 +26,7 @@
         "https://kitsu.io/anime/*"
       ],
       "js": [
-        "inject/wheretowatch.js"
+        "js/jquery/jquery.min.js"
       ]
     }
   ]
