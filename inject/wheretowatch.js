@@ -2,7 +2,7 @@ $(document).ready(function() {
 	//get anime name from kitsu url
 	var animename = window.location.pathname;
 	animename = animename.split("/").slice(-1)[0];
-	//squeeze it together to fit the most of it into the length limit
+	//replace dashes with spaces
 	animename = animename.replace(/-/g, ' ');
 	
 	//add illegal streaming list
