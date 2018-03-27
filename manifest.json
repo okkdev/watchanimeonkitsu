@@ -1,6 +1,6 @@
 {
   "name": "watch anime on kitsu",
-  "version": "0.4",
+  "version": "0.5",
   "manifest_version": 2,
   "description": "*how do watch the videos.* Kitsu is a tracking website m'ladies.",
   "homepage_url": "https://github.com/ok2094/watchanimeonkitsu",
@@ -16,21 +16,11 @@
     ]
   },
   "browser_action": {
-    "default_title": "Masterani"
+    "default_title": "idk"
   },
   "permissions": [
     "tabs",
     "https://kitsu.io/anime/*",
     "https://www.masterani.me/*"
-  ],
-  "content_scripts": [
-    {
-      "matches": [
-        "https://kitsu.io/anime/*"
-      ],
-      "js": [
-        "js/jquery/jquery.min.js"
-      ]
-    }
   ]
 }
